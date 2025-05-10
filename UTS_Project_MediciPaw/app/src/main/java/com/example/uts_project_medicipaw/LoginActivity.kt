@@ -43,11 +43,9 @@ class LoginActivity : AppCompatActivity() {
         auth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
-                    // Login berhasil, navigasi ke MainActivity
                     startActivity(Intent(this, MainActivity::class.java))
-                    finish() // Tutup activity login
+                    finish() 
                 } else {
-                    // Menampilkan pesan kesalahan
                     val errorMessage = task.exception?.message ?: "Login failed."
                     Toast.makeText(baseContext, errorMessage, Toast.LENGTH_SHORT).show()
                 }
