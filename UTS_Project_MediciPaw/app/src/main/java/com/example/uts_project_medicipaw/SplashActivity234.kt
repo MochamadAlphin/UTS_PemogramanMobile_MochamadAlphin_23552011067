@@ -38,7 +38,6 @@ class SplashActivity234 : AppCompatActivity() {
                 animateSplashScreen()
                 updateIndicators(currentIndex)
             } else {
-                // Ganti ke LoginActivity
                 startActivity(Intent(this, LoginActivity::class.java))
                 finish()
             }
@@ -73,10 +72,10 @@ class SplashActivity234 : AppCompatActivity() {
             val indicator = ImageView(this)
             indicator.setImageResource(R.drawable.circle_inactive)
             val params = LinearLayout.LayoutParams(
-                24, // Ukuran untuk tidak aktif (width)
-                24  // Ukuran untuk tidak aktif (height)
+                24, 
+                24  
             )
-            params.setMargins(12, 0, 12, 0) // Tambah margin agar tidak terlalu rapat
+            params.setMargins(12, 0, 12, 0) 
             indicatorLayout.addView(indicator, params)
         }
     }
@@ -86,16 +85,16 @@ class SplashActivity234 : AppCompatActivity() {
             val indicator = indicatorLayout.getChildAt(i) as ImageView
             if (i == position) {
                 // Indikator aktif lebih besar
-                indicator.layoutParams.width = 36 // Ukuran baru untuk aktif
-                indicator.layoutParams.height = 36 // Ukuran baru untuk aktif
+                indicator.layoutParams.width = 36 
+                indicator.layoutParams.height = 36 
                 indicator.setImageResource(R.drawable.circle_active)
             } else {
                 // Indikator tidak aktif
-                indicator.layoutParams.width = 24 // Ukuran untuk tidak aktif
-                indicator.layoutParams.height = 24 // Ukuran untuk tidak aktif
+                indicator.layoutParams.width = 24 
+                indicator.layoutParams.height = 24
                 indicator.setImageResource(R.drawable.circle_inactive)
             }
-            indicator.requestLayout() // Meminta layout ulang untuk memperbarui tampilan
+            indicator.requestLayout() 
         }
     }
 }
