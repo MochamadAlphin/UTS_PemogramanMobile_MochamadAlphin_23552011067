@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1054347276960",
+    "firebase_url": "https://medicipaw-default-rtdb.firebaseio.com",
+    "project_id": "medicipaw",
+    "storage_bucket": "medicipaw.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054347276960:android:66f42771e20458cd068fc5",
+        "android_client_info": {
+          "package_name": "com.example.uts_project_medicipaw"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLkuSZY_xwjUl-gBrBVe_deNtRKWA4WhQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
